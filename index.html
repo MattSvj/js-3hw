@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Задание 1 */
+        
+        function kub(num) {
+            return num * num * num;
+        }
+        console.log(kub(2) + kub(3));
+
+        /* Задание 2 */
+        let input = prompt('Введите число');
+        function nalog(input) {
+            return input * 0.13;
+        }
+        if (isNaN(input)) {
+            console.log("Значение задано неверно");
+        } else {
+            console.log(`13% от ${input} равно ${nalog(input)}`);
+        }
+
+        /* Задание 3 */
+        let num1 = prompt('Введите первое число');
+        let num2 = prompt('Введите второе число');
+        let num3 = prompt('Введите третье число');
+        function maxNumber(a, b, c) {
+            return Math.max(a, b, c);
+        }
+        console.log(maxNumber(num1, num2, num3));
+        /* Задание 4 */
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        function difference(a, b) {
+            return Math.max(a - b, 0);
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            return a / b;
+        }
+
+        console.log(sum(2, 12));
+        console.log(difference(10, 3));
+        console.log(multiply(4, 7));
+        console.log(divide(12, 4));
+    </script>
+</body>
+</html>
